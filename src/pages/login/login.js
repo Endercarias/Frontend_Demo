@@ -1,9 +1,14 @@
 import './login.css'
-import {useNavigate, Link} from 'react-router-dom'
+import {useNavigate, Link, useParams} from 'react-router-dom'
 
 const Login = () => {
 
     const navigate = useNavigate();
+    const token = localStorage.getItem("token")
+    const {idCarro} = useParams()
+    if(token != undefined){
+        window.location = `/citas/${idCarro}`
+    }
 
     const onSubmit = async (e)=> {
         e.preventDefault()
@@ -31,10 +36,27 @@ const Login = () => {
                 alert(data.message)
                 return
             }
+            console.log(data);
+            status: false
             */
-           localStorage.setItem('token', data.token)
-           console.log(data);
-           window.location = '/home'
+        if(data.status){
+            localStorage.setItem('token', data.token)
+         sessionStorage.setItem('userId', data.idUsuario)
+         sessionStorage.setItem('rol', data.rol)
+         
+         if(data.rol === 1){
+             window.location = '/admincar'
+         }else{
+             console.log(idCarro)
+             if(idCarro != undefined){
+                 window.location = `/citas/${idCarro}`
+             }else{
+                 window.location = `/carros`
+             }
+         }
+        }else{
+            alert(data.Message)
+        }
         }catch(e){
             console.log(e)
         }
@@ -42,7 +64,7 @@ const Login = () => {
     }
 
     return(
-        <div className="container">
+        <div className="container1">
     <h2>Iniciar sesión</h2>
 
 

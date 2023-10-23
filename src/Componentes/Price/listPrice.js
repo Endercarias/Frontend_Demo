@@ -5,7 +5,7 @@ const ListPrice = ({idCarro}) => {
   const [price, setPrices] = useState([]);
   useEffect(() => {
     // solicitud GET 
-    fetch(`http://localhost:4020/api/importadora/getCotizaciones/${idCarro}`)
+    fetch(`http://localhost:4020/api/importadora/car/${idCarro}`)
       .then(response => response.json())
       .then(data => setPrices(data))
       .catch(error => console.log(error));

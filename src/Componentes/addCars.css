@@ -51,5 +51,33 @@
     background-color: #45a049;
   }
 
+  /* Estilos básicos para la galería de imágenes */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  margin: 10px;
+  position: relative;
+}
+
+.edit-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+/* Estilos básicos para el modal (oculto por defecto) */
+.edit-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #ffffff;
+}
+
   
   

@@ -1,0 +1,104 @@
+/* Estilos para el contenedor principal */
+.update-car-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.image-upload {
+  margin-top: 50px; /* Aumentado el margen en la parte superior */
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón de eliminación de imagen */
+.delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  background-color: #ff5252; /* Color de fondo rojo */
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Hace que el botón sea redondo */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.image-item {
+  flex: 1;
+  max-width: calc(50% - 10px); /* Dos imágenes en una fila */
+  margin-bottom: 20px;
+}
+
+.image-item img {
+  width: 100%; /* Ajustado el ancho de la imagen */
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  margin-right: 30px; /* Incrementado el margen derecho del formulario */
+  width: 60%; /* Establecido un ancho fijo para el formulario */
+}
+
+.form-container {
+  /* Estilos del formulario */
+  background-color: #f2f2f2;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* max-width: 90%;  */ /* No establecer un ancho máximo para evitar problemas de tamaño de página */
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.displayName {
+  display: none;
+}
+
+.label {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.labelw {
+  text-align: left;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

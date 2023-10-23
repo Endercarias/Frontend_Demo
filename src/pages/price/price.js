@@ -25,7 +25,7 @@ const Price = ({userLogged}) => {
   </nav>
 </header>
 
-      <h1>Cotizaciones</h1>
+    <h1>Cotizaciones</h1>
       <Cotizaciones />
       <ListPrice  idCarro={idCarro}/>
     </div>

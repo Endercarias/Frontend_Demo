@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+.content1 {
+    margin: 20px;
+  }
+  
+  /* Estilo para el encabezado */
+  .content1 h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Estilo para las celdas de encabezado */
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Estilo para las celdas de datos */
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; /* Evita el salto de línea automático */
+    overflow: hidden;    /* Oculta el texto que no cabe */
+    text-overflow: ellipsis; 
+  }
+  
+  /* Estilo para la clase "button" */
+  .button {
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Estilo para los enlaces dentro de las celdas de acciones */
+  td a.button {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Estilo para los enlaces hover */
+  td a.button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Estilo para las celdas de acciones */
+td.actions {
+    white-space: normal; /* Restablece el salto de línea automático para las celdas de acciones */
+    overflow: visible;   /* Permite que el texto crezca hacia abajo en las celdas de acciones */
+    text-overflow: initial; /* Restablece el comportamiento de desbordamiento de texto en las celdas de acciones */
+  }
+
+  /* Estilo para el botón de eliminar */
+.delete-button1 {
+    background-color: #f44336; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interior (ajústalo según sea necesario) */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón sobre el botón */
+    margin-left: 5px;
+  }
+  
+  /* Estilo para el botón de eliminar al pasar el ratón */
+  .delete-button1:hover {
+    background-color: #d32f2f; /* Color de fondo al pasar el ratón */
+  }

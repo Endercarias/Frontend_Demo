@@ -1,0 +1,113 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 80%;
+    overflow-x: auto;
+    border: 1px solid #ddd; 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: pre-wrap;
+    max-width: 200px; /* Ancho máximo ajustable según tus necesidades */
+    overflow: auto;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Agrega estilos de texto en una sola línea en pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    button {
+        padding: 3px 6px;
+    }
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between; /* Alinea elementos a los lados */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px;
+    background-color: #efeeee;
+    max-width: 80%;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.boton-agregar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton-agregar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos básicos para la galería de imágenes */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    margin: 10px;
+    position: relative;
+}
+
+.edit-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Estilos básicos para el modal (oculto por defecto) */
+.edit-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ffffff;
+}

@@ -1,30 +1,16 @@
 import React from 'react';
-import { Navigate } from 'react-router-dom';
-import AddCars from '../../Componentes/addCars';
 import ListCars from '../../Componentes/ListCars';
+import HeaderPublic from '../../Componentes/HeaderPublic';
 
-const Carros = ({userLogged}) => {
+const Carros = () => {
 
-  if(!userLogged){
-    return<Navigate to = "/"/>
-  }
+
 
   return (
     <div>
-      <header class="header">
-  <h1>Importadora Orellana</h1>
-  <nav class="navigation">
-    <ul class="menu">
-      <li><a href="./home">Inicio</a></li>
-      <li><a href="./carros">Carros</a></li>
-      <li><a href="./price">Cotizar</a></li>
-      <li><a href="#">Cerrar sesión</a></li>
-    </ul>
-  </nav>
-</header>
+      <HeaderPublic />
 
-      <h1>CRUD de Venta de Carros</h1>
-      <AddCars />
+      <h1>Venta de Carros</h1>
       <ListCars />
     </div>
   );
